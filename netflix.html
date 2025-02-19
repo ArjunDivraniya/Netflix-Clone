@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <title>Netflix</title>
+    <style>
+
+        body{
+            background-color:#141414 ;
+        }
+        .logo{
+            position: absolute;
+            top: 32px;
+           margin-left: 32px;
+        }
+        .logo img{
+            width: 110%;
+            height: 22px;
+            
+        }
+        .navbar{
+            display: flex;
+          color: rgb(0, 0, 0);
+        
+      position: absolute;
+      top: 32px;
+      left: 165px;
+      font-family: Arial, Helvetica, sans-serif;
+      
+        }
+        .text{
+            margin-left: 22px;
+            font-size: 19px;
+        }
+        .icon{
+            display: flex;
+            position: absolute;
+            top: 32px;
+            left: 100rem;
+            opacity: 0.8;
+
+        }
+        .icon1{
+            margin-left: 20px;
+        }
+        .icon1 img{
+           
+            height: 27px;
+        }
+        .rgblogo{
+            position: absolute;
+            top: 57%;
+            left: 5%;
+           
+        }
+        .rgblogo img{
+           
+           width: 24px;
+           height: 38px;
+        }
+        .text1{
+            position: absolute;
+            top: 57%;
+            left: 7%;
+            font-family:system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif ;  
+        font-weight: 400;
+        font-size: 19px;
+        color: aliceblue;
+        }
+        .text2{
+            position: absolute;
+    top: 61%;
+    left: 5%;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    font-size: 9rem;
+    color: white;
+fon
+            
+        }
+        .playbutton{
+            display: flex;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 47rem;
+    left: 6rem;
+    border-radius: 7px;
+   
+    align-items: center;
+        }
+        .play{
+            margin: 5px;
+            font-family: 'Segoe UI';
+            font-weight: bold;
+
+        }
+        .infobutten{
+            display: flex;
+    background-color: #808080b0;
+    position: absolute;
+    top: 47rem;
+    left: 17rem;
+    border-radius: 7px;
+    padding: 5px;
+    align-items: center;
+        }
+        .info{
+            margin-left: 3px;
+            margin-right: 3px;
+            font-family: 'Segoe UI';
+            font-weight: bold;
+            color: aliceblue;
+        }
+        .forvideo{
+            display: flex;
+    position: absolute;
+    top: 58rem;
+    left: 6rem;
+    font-size: 30px;
+    align-items: center;
+        }
+        .seeagain{
+            font-size: 26px;
+            font-weight: bold;
+            color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .videopage{
+            display: flex;
+            margin-left: 50px;
+            position: absolute;
+            top: 62rem;
+            left:-1rem ;
+        }
+        .item1 img{
+            width: 95%;
+    height: 100%;
+    margin-left: 5.5rem;
+        }
+        .title2{
+            display: flex;
+    position: absolute;
+    top: 79rem;
+    left: 7rem;
+    font-size: 35px;
+    align-items: center;
+        }
+        .title2 img{
+            width: 19px;
+    height: 123px;
+    margin-left: 7px;
+        }
+        .top10{
+            font-size: 20px;
+            font-weight: bold;
+            color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif; 
+        }
+        .yourcountry{
+            display: flex;
+        position: absolute;
+        top: 83rem;
+        left: 8rem;
+        }
+        .count{
+            margin-left: 13rem;
+        }
+        .count img{
+            height: 25vh;
+            width: 8vw;
+        }
+        .yourcountryphoto{
+            display: flex;
+            position: absolute;
+            left: 7rem;
+            top: 83rem;
+          
+        }
+        .photo{
+            margin-left: 11rem
+        }
+        .photo1{
+            margin-left: 15rem
+        }
+        .photo2{
+            margin-left: 11rem
+        }
+        .photo3{
+            margin-left: 11rem
+        }
+        .photo4{
+            margin-left: 11rem
+        }
+        .photo img{
+            height: 25vh;
+            width: 9vw;
+        }
+       .forvideo1{ display: flex;
+    position: absolute;
+    top: 104rem;
+    left: 7rem;
+    font-size: 30px;
+    align-items: center;
+    }
+    .trending{
+        font-size: 20px;
+            font-weight: bold;
+            color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif; 
+    }
+    .trendingvideo{
+        display: flex;
+            margin-left: 50px;
+            position: absolute;
+            top: 108rem;
+            left:-1rem ;
+    }
+    .forvideo2{ display: flex;
+    position: absolute;
+    top: 125rem;
+    left: 7rem;
+    font-size: 30px;
+    align-items: center;
+    }
+    .scifivideo{
+        display: flex;
+            margin-left: 50px;
+            position: absolute;
+            top: 130rem;
+            left:-1rem ;
+    }
+    .footer{
+position: absolute;
+top: 146rem
+
+    }
+    .footer div {
+        display: flex;
+        
+    }
+    .footer div img{
+        margin-left: 20px;
+
+    }
+    .social{
+        position: absolute;
+        left: 300px;
+    }
+.footerinfo{
+    display: grid;
+    margin-left: 176px;
+    margin-top: 60px;
+
+}
+.info1{
+    display: flex;
+    flex-direction: column;
+    margin-left: 140px;
+color: #808080;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+.kuch{
+    margin-bottom: 24px;
+    font-size: 11px;
+}
+.last{
+    color: #808080;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 11px;
+
+margin-left: 314px;
+
+}
+.title_image img{
+opacity: 0.8;
+}
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="netflix">
+        <div class="title_image"><img style="width: 100%;" src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/Title-Image.png?raw=true" alt=""></div>
+   <div class="logo"><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/NetflixLogoSvg.png?raw=true" alt=""></div>
+<div class="navbar">
+    <div class="text"><b>start</b></div>
+    <div class="text">Shows</div>
+    <div class="text">Movies</div>
+    <div class="text">New</div>
+    <div class="text">My List</div>
+    
+</div>  
+
+
+<div class="icon">
+    <div class="icon1"><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/Search.png?raw=true" alt=""></div>
+    <div class="icon1"><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/GiftBox.png?raw=true" alt=""></div>
+    <div class="icon1"><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/NotificationBell.png?raw=true" alt=""></div>
+    <div class="icon1"><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/ProfileIMG.png?raw=true" alt=""></div>
+    <div class="icon1"><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/DownArrow.png?raw=true" alt=""></div>
+</div>
+<div>
+    <div class="rgblogo"><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/Netflix_Symbol_RGB%201.png?raw=true" alt=""></div>
+    <div class="text1">S H O W</div>
+    <div class="text2">MAID</div>
+    <div class="playbutton">
+        <div class="play"><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/Play.png?raw=true" alt=""></div>
+        <div class="play">Play</div>
+    </div>
+    <div class="infobutten">
+        <div class="info"><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/Detail.png?raw=true" alt=""></div>
+    <div class="info">More info</div>
+    </div>
+
+</div>
+<div class="forvideo">
+<div class="seeagain">See again</div>
+<div><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/ArrowRight.png?raw=true" alt="" style="position: absolute;
+    top: 6px;
+    height: 22px;"></div>
+</div>
+<div class="videopage">
+    <div class="item1">
+        <img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/section%201.1.png?raw=true" alt="">
+    </div>
+    <div class="item1">
+        <img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/section%201.2.png?raw=true" alt="">
+    </div>
+    <div class="item1">
+        <img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/section%201.3.png?raw=true" alt="">
+    </div>
+    <div class="item1">
+        <img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/section%201.4.png?raw=true" alt="">
+    </div>
+    <div class="item1">
+        <img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/section%201.5.png?raw=true" alt="">
+    </div>
+
+</div>
+<div class="title2">
+    <div class="top10">Top 10 in your country</div>
+    <div><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/ArrowRight.png?raw=true" alt="" style="position: absolute;top: 5px; height: 19px; "></div>
+</div>
+<div class="yourcountry">
+<div ><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/Rank%20-%2001.png?raw=true" alt="" style="height: 24vh; width: 8vw;"></div>
+<div class="count"><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/Rank%20-%2002.png?raw=true" alt=""></div>
+
+<div class="count"><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/Rank%20-%2003.png?raw=true" alt=""></div>
+
+<div class="count"><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/Rank%20-%2004.png?raw=true" alt=""></div>
+
+<div class="count"><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/Rank%20-%2005.png?raw=true" alt=""></div>
+<div class="count"><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/Rank%20-%2006.png?raw=true" alt=""></div>
+
+</div>
+<div class="yourcountryphoto">
+    <div class="photo"><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/section%202.1.png?raw=true" alt=""></div>
+    <div class="photo1"><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/section%202.2.png?raw=true" alt=""></div>
+
+    <div class="photo2"><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/section%202.3.png?raw=true" alt=""></div>
+    <div class="photo3"><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/section%202.4.png?raw=true" alt=""></div>
+    <div class="photo4"><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/section%202.5.png?raw=true" alt=""></div>
+
+</div>
+
+<div class="forvideo1">
+    <div class="trending">Trending Now</div>
+    <div><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/ArrowRight.png?raw=true" alt="" style="position: absolute;
+        top: 4px;
+     
+        height: 15px;"></div>
+    </div>
+    <div class="trendingvideo">
+        <div class="item1"><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/section%203.1.png?raw=true" alt=""></div>
+        <div class="item1"><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/section%203.2.png?raw=true" alt=""></div>
+        <div class="item1"><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/section%203.3.png?raw=true" alt=""></div>
+        <div class="item1"><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/section%203.4.png?raw=true" alt=""></div>
+        <div class="item1"><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/section%203.5.png?raw=true" alt=""></div>
+    
+    </div>
+    <div class="forvideo2">
+        <div class="trending">Sci-fi shows</div>
+        <div><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/ArrowRight.png?raw=true" alt="" style="position: absolute;
+            top: 4px;
+            left: 125px;
+            height: 15px;"></div>
+        </div>
+
+        <div class="scifivideo">
+            <div class="item1"><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/section%204.1.png?raw=true" alt=""></div>
+            <div class="item1"><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/section%204.2.png?raw=true" alt=""></div>
+            <div class="item1"><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/section%204.3.png?raw=true" alt=""></div>
+            <div class="item1"><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/section%204.4.png?raw=true" alt=""></div>
+            <div class="item1"><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/section%204.5.png?raw=true" alt=""></div>
+            
+            </div>
+        </div>
+        <div class="footer">
+            <div class="social">
+<div><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/facebook.png?raw=true" alt=""></div>
+<div><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/instagram.png?raw=true" alt=""></div>
+<div><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/twitter.png?raw=true" alt=""></div>
+<div><img src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/11.netflix-clone/assets/youtube.png?raw=true" alt=""></div>
+            
+            </div>
+        <div class="footerinfo">
+            <div class="info1">
+                <div class="kuch">Seslendirme Ve Alt Yazi</div>
+                <div class="kuch">Medya Merkezi</div>
+                <div class="kuch">Gizililik</div>
+                <div class="kuch">Bize Ulasin</div>
+            </div>
+            <div class="info1">
+                <div class="kuch">Sesli Betimleme</div>
+                <div class="kuch">Yatinmci lilikileri</div>
+                <div class="kuch">yasal hukumler</div>
+            </div>
+            <div class="info1">
+                <div  class="kuch">yardim merkezi</div>
+                <div class="kuch">is imkanlan</div>
+                <div class="kuch">cerez tercihleri</div>
+            </div>
+            <div class="info1">
+                <div class="kuch">hediye kartlen</div>
+                <div class="kuch">Kuilanm kosullari</div>
+                <div class="kuch">kurumsal bilgiler</div>
+            </div>
+        </div>
+        <div class="lastbox">
+        <div class="last">Hizmet kodu</div>
+    </div>
+        </div>
+</div>
+
+</body>
+</html>
